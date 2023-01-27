@@ -37,4 +37,49 @@
 .read-the-docs {
   color: #888;
 }
+.task {
 
+}
+.task__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task__item {
+  color: aliceblue;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
+
+.task__item--is-done {
+  text-decoration: line-through;
+}
+
+.button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.button:hover {
+  border-color: #646cff;
+}
+
+.button__delete {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; 
+  font-size: 0.75rem;    
+}
